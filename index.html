@@ -48,12 +48,15 @@
         //var masa = obj_masa.options[obj_masa.selectedIndex].value;
         //alert(masa);
     //recogemos los datos de la salsa, esto todavia no funciona, preguntar al profe
+    //sacamos los descuentos
     var elementos = document.getElementsByName("gruposalsa");
-    for(var i=0; i<elementos.length; i++) {
-        if (elementos[i].checked) {
-                    alert(elementos[i].value);
+            for (var i = 0; i < elementos.length; i++) {
+                if (elementos[i].checked) {
+                    var salsa = elementos[i].value;
+                    alert(salsa);
+                    //alert("El descuento");
                 }
-    }
+            }
 
         //var obj_salsa = document.getElementById("gruposalsa");
         //var salsa = obj_salsa.options[obj_salsa.selectedIndex].value;
