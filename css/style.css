@@ -68,3 +68,11 @@ hr{
 #expli{
     margin-left: 20%;
 }
+@media screen and (max-width: 800px){
+    #right-side{
+        width: 100%;
+    }
+    #left-side{
+        width: 100%;
+    }
+}
