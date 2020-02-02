@@ -25,10 +25,7 @@
   </script>
   <script>
   function Calcular(){
-    
-    //var mediana;
-    //var familiar;
-    var precio;
+    var precioBase = 10.20;
     //recogemos los datos del tamaño de la pizza
         var obj_tamaño = document.getElementById("tamaño");
         var tamaño = obj_tamaño.options[obj_tamaño.selectedIndex].value;
@@ -38,14 +35,14 @@
     //alert(texto_tamaño);
     //cogemos las elecciones del select
         if (texto_tamaño == "Familiar"){
-            precio = 10.20+7;
+            var precioTamaño = precioBase+7;
         } 
         else{
-            precio = 10.20;
+            precioTamaño = precioBase;
         }
     //recogemos los datos de la masa
-        //var obj_masa = document.getElementById("masa");
-        //var masa = obj_masa.options[obj_masa.selectedIndex].value;
+        var obj_masa = document.getElementById("masa");
+        var masa = obj_masa.options[obj_masa.selectedIndex].value;
         //alert(masa);
     //recogemos los datos de la salsa, esto todavia no funciona, preguntar al profe
     //sacamos los descuentos
@@ -53,16 +50,191 @@
             for (var i = 0; i < elementos.length; i++) {
                 if (elementos[i].checked) {
                     var salsa = elementos[i].value;
-                    alert(salsa);
+                    alert("la salsa marcada");
+                    //alert(salsa);
                     //alert("El descuento");
                 }
             }
+    if (salsa == 1){
+        var precioSalsa = 0;
+        //alert("Este es el precio de la salsa");
+        //alert(precioSalsa);
+    }
+    else{
+        precioSalsa = 1;
+        //alert("este es el precio de la salsa");
+        //alert(precioSalsa);
+    }
     //checks!!!
+    var chk_tomate = document.getElementById("tomate");
+    if (chk_tomate.checked){
+        var precio_tomate = 2;
+        //alert(precio_tomate);
+    }
+    else{
+        //alert("pues que pizza mas sosa");
+        precio_tomate = 0;
+        //alert(precio_tomate);
+    }
+    var chk_bacon = document.getElementById("bacon");
+    if (chk_bacon.checked){
+        var precio_bacon = 2;
+        //alert(precio_bacon);
+    }
+    else{
+        //alert("pues que pizza mas sosa");
+        precio_bacon = 0;
+        //alert(precio_bacon);
+    }
+    var chk_aceitunas = document.getElementById("aceitunas");
+    if (chk_aceitunas.checked){
+        var precio_aceitunas = 2;
+        //alert(precio_aceitunas);
+    }
+    else{
+        //alert("pues que pizza mas sosa");
+        precio_aceitunas = 0;
+        //alert(precio_aceitunas);
+    }
+    var chk_anchoas = document.getElementById("anchoas");
+    if (chk_anchoas.checked){
+        var precio_anchoas = 2;
+        //alert(precio_anchoas);
+    }
+    else{
+        //alert("pues que pizza mas sosa");
+        precio_anchoas = 0;
+        //alert(precio_anchoas);
+    }
+
+    var chk_baconcris = document.getElementById("baconcrispy");
+    if (chk_baconcris.checked){
+        var precio_baconcris = 2;
+        //alert(precio_baconcris);
+    }
+    else{
+        //alert("pues que pizza mas sosa");
+        precio_baconcris = 0;
+        //alert(precio_baconcris);
+    }
+    var chk_cebolla = document.getElementById("cebolla");
+    if (chk_cebolla.checked){
+        var precio_cebolla = 2;
+        //alert(precio_cebolla);
+    }
+    else{
+        //alert("pues que pizza mas sosa");
+        precio_cebolla = 0;
+        //alert(precio_cebolla);
+    }
+    var chk_champinyon = document.getElementById("champinyon");
+    if (chk_champinyon.checked){
+        var precio_champinyon = 2;
+        //alert(precio_champinyon);
+    }
+    else{
+        //alert("pues que pizza mas sosa");
+        precio_champinyon = 0;
+        //alert(precio_champinyon);
+    }
+    var chk_albondigas = document.getElementById("albondigas");
+    if (chk_albondigas.checked){
+        var precio_albondigas = 2;
+        //alert(precio_albondigas);
+    }
+    else{
+        //alert("pues que pizza mas sosa");
+        precio_albondigas = 0;
+        //alert(precio_albondigas);
+    }
+
+    var chk_maiz = document.getElementById("maiz");
+    if (chk_maiz.checked){
+        var precio_maiz = 2;
+        //alert(precio_maiz);
+    }
+    else{
+        //alert("pues que pizza mas sosa");
+        precio_maiz = 0;
+        //alert(precio_maiz);
+    }
+    var chk_pimiento = document.getElementById("pimiento");
+    if (chk_pimiento.checked){
+        var precio_pimiento = 2;
+        //alert(precio_pimiento);
+    }
+    else{
+        //alert("pues que pizza mas sosa");
+        precio_pimiento = 0;
+        //alert(precio_pimiento);
+    }
+    var chk_atun = document.getElementById("atun");
+    if (chk_atun.checked){
+        var precio_atun = 2;
+        //alert(precio_atun);
+    }
+    else{
+       //alert("pues que pizza mas sosa");
+        precio_atun = 0;
+        //alert(precio_atun);
+    }
+    var chk_ternera = document.getElementById("ternera");
+    if (chk_ternera.checked){
+        var precio_ternera = 2;
+        //alert(precio_ternera);
+    }
+    else{
+        //alert("pues que pizza mas sosa");
+        precio_ternera = 0;
+        //alert(precio_ternera);
+    }
+
+    var chk_jamon = document.getElementById("jamon");
+    if (chk_jamon.checked){
+        var precio_jamon = 2;
+        //alert(precio_jamon);
+    }
+    else{
+        //alert("pues que pizza mas sosa");
+        precio_jamon = 0;
+        //alert(precio_jamon);
+    }
+    var chk_pepperoni = document.getElementById("pepperoni");
+    if (chk_pepperoni.checked){
+        var precio_pepperoni = 2;
+        //alert(precio_pepperoni);
+    }
+    else{
+        //alert("pues que pizza mas sosa");
+        precio_pepperoni = 0;
+        //alert(precio_pepperoni);
+    }
+    var chk_pollo = document.getElementById("pollo");
+    if (chk_pollo.checked){
+        var precio_pollo = 2;
+        //alert(precio_pollo);
+    }
+    else{
+        //alert("pues que pizza mas sosa");
+        precio_pollo = 0;
+        //alert(precio_pollo);
+    }
+    var chk_piña = document.getElementById("piña");
+    if (chk_piña.checked){
+        var precio_piña = 2;
+        //alert(precio_piña);
+    }
+    else{
+        //alert("pues que pizza mas sosa");
+        precio_piña = 0;
+        //alert(precio_piña);
+    }
+
 
         
         
         //sacamos el precio por pantalla
-        
+        precio = precioTamaño + precioSalsa + precio_aceitunas + precio_albondigas + precio_anchoas + precio_atun + precio_bacon + precio_baconcris + precio_cebolla + precio_champinyon + precio_jamon + precio_maiz + precio_pepperoni + precio_pimiento + precio_piña + precio_pollo + precio_ternera + precio_tomate;
         document.getElementById("precio").value = precio;
   }
   </script>
@@ -203,7 +375,7 @@
                 <div class="col s3">
 
                 <label>
-                    <input type="checkbox" value="1" id="ingred"/>
+                    <input type="checkbox" value="1" id="tomate"/>
                     <span>Tomate</span>
                 </label>
 
@@ -212,7 +384,7 @@
                 <div class="col s3">
 
                 <label>
-                    <input type="checkbox" value="2" id="ingred"/>
+                    <input type="checkbox" value="2" id="bacon"/>
                     <span>Bacon</span>
                 </label>
 
@@ -220,7 +392,7 @@
                 <div class="col s3">
 
                 <label>
-                    <input type="checkbox" value="3" id="ingred"/>
+                    <input type="checkbox" value="3" id="aceitunas"/>
                     <span>Aceitunas</span>
                 </label>
 
@@ -228,7 +400,7 @@
                 <div class="col s3">
 
                 <label>
-                    <input type="checkbox" value="4" id="ingred"/>
+                    <input type="checkbox" value="4" id="anchoas"/>
                     <span>Anchoas</span>
                 </label>
 
@@ -253,7 +425,7 @@
                 <div class="col s3">
 
                 <label>
-                    <input type="checkbox" value="5" id="ingred"/>
+                    <input type="checkbox" value="5" id="baconcrispy"/>
                     <span>Bacon crispy</span>
                 </label>
 
@@ -261,7 +433,7 @@
                 <div class="col s3">
 
                 <label>
-                    <input type="checkbox" value="6" id="ingred"/>
+                    <input type="checkbox" value="6" id="cebolla"/>
                     <span>Cebolla caramelizada</span>
                 </label>
 
@@ -269,7 +441,7 @@
                 <div class="col s3">
 
                 <label>
-                    <input type="checkbox" value="7" id="ingred"/>
+                    <input type="checkbox" value="7" id="champinyon"/>
                     <span>Champiñon</span>
                 </label>
 
@@ -277,7 +449,7 @@
                 <div class="col s3">
 
                 <label>
-                    <input type="checkbox" value="8" id="ingred"/>
+                    <input type="checkbox" value="8" id="albondigas"/>
                     <span>Albondigas</span>
                 </label>
 
@@ -303,7 +475,7 @@
                 <div class="col s3">
 
                 <label>
-                    <input type="checkbox" value="9" id="ingred"/>
+                    <input type="checkbox" value="9" id="maiz"/>
                     <span>Maiz</span>
                 </label>
 
@@ -311,7 +483,7 @@
                 <div class="col s3">
 
                 <label>
-                    <input type="checkbox" value="10" id="ingred"/>
+                    <input type="checkbox" value="10" id="pimiento"/>
                     <span>Pimiento</span>
                 </label>
 
@@ -319,7 +491,7 @@
                 <div class="col s3">
 
                 <label>
-                    <input type="checkbox" value="11" id="ingred"/>
+                    <input type="checkbox" value="11" id="atun"/>
                     <span>Atun</span>
                 </label>
 
@@ -327,7 +499,7 @@
                 <div class="col s3">
 
                 <label>
-                    <input type="checkbox" value="12" id="ingred"/>
+                    <input type="checkbox" value="12" id="ternera"/>
                     <span>Ternera</span>
                 </label>
 
@@ -352,7 +524,7 @@
                 <div class="col s3">
 
                 <label>
-                    <input type="checkbox" value="13" id="ingred"/>
+                    <input type="checkbox" value="13" id="jamon"/>
                     <span>Jamon serrano</span>
                 </label>
 
@@ -360,7 +532,7 @@
                 <div class="col s3">
 
                 <label>
-                    <input type="checkbox" value="14" id="ingred"/>
+                    <input type="checkbox" value="14" id="pepperoni"/>
                     <span>Pepperoni</span>
                 </label>
 
@@ -368,7 +540,7 @@
                 <div class="col s3">
 
                 <label>
-                    <input type="checkbox" value="15" id="ingred"/>
+                    <input type="checkbox" value="15" id="pollo"/>
                     <span>Pollo</span>
                 </label>
 
@@ -376,7 +548,7 @@
                 <div class="col s3">
 
                 <label>
-                    <input type="checkbox" value="16" id="ingred"/>
+                    <input type="checkbox" value="16" id="piña"/>
                     <span>Piña</span>
                 </label>
 
